@@ -1,6 +1,6 @@
 # nginx + PHP5-FPM + MariaDB + supervisord on Docker
 #
-# VERSION               0.0.1
+# VERSION               0.0.2
 FROM        ubuntu:14.04
 MAINTAINER  Steeve Morin "michael@dodwell.us"
 
