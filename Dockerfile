@@ -2,7 +2,7 @@
 #
 # VERSION               0.0.2
 FROM        ubuntu:14.04
-MAINTAINER  Steeve Morin "michael@dodwell.us"
+MAINTAINER  Michael Dodwell "michael@dodwell.us"
 
 # install curl, wget
 RUN apt-get install -y curl wget
