@@ -13,7 +13,7 @@ RUN apt-get install -y curl wget
 # Configure repos
 RUN apt-get install -y python-software-properties software-properties-common
 RUN apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 0xcbcb082a1bb943db
-RUN add-apt-repository 'deb http://mirrors.linsrv.net/mariadb/repo/5.5/ubuntu precise main'
+RUN add-apt-repository 'deb http://mirrors.linsrv.net/mariadb/repo/5.5/ubuntu trusty main'
 RUN add-apt-repository -y ppa:nginx/stable
 RUN add-apt-repository -y ppa:ondrej/php5
 RUN apt-get update
