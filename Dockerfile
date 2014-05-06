@@ -5,7 +5,6 @@ FROM        ubuntu:14.04
 MAINTAINER  Michael Dodwell "michael@dodwell.us"
 
 ENV LANG C.UTF-8
-ENV DEBIAN_FRONTEND noninteractive
 
 # install curl, wget
 RUN apt-get install -y curl wget
