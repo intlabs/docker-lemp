@@ -32,6 +32,9 @@ ADD nginx_default.conf /etc/nginx/sites-available/default
 RUN echo "cgi.fix_pathinfo = 0;" >> /etc/php5/fpm/php.ini
 RUN mkdir -p /var/www && chown -R www-data:www-data /var/www
 
+
+RUN git clone https://github.com/symbiose/symbiose.git && mv ./symbiose/* /var/www/ && rm -r -f symbiose
+
 # Supervisord
 RUN apt-get -y install python-setuptools
 RUN easy_install supervisor
